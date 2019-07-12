@@ -2,6 +2,7 @@ const { DateTime } = require("luxon");
 const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const localImages = require("eleventy-plugin-local-images");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
