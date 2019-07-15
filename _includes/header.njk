@@ -1,20 +1,19 @@
 <div id="header">
   <h1>
-    <a id="sitename" href="{{site.baseurl}}">{{site.title}}</a>
+    <a id="sitename" href="{{config.baseurl}}">{{config.title}}</a>
   </h1>
 
   <!-- Add something about you in p tag-->
-  <p>{{ site.header }}</p>
+  <p>{{ config.header }}</p>
   <hr/>
 
-  <span class="credits pull-left">
-    {% for item in site.data.nav.items %}
-      <a href="{{ item.path | prepend:site.baseurl }}">{{item.text}}</a>
-      {% unless forloop.last %} | {% endunless %}
-    {% endfor %}
-  </span>
+  {%- for nav in collections.nav%}
+    <span class="credits pull-left">
+      <a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a> |
+    </span>
+  {%- endfor -%}
 
-  <span class="credits pull-right social">
+  {# <span class="credits pull-right social">
     {% for sl in site.data.personal.social %}
       {% unless sl[1] == '' %}
         <a href="{{sl[1]}}" target="_blank">
@@ -22,6 +21,6 @@
         </a>
       {% endunless %}
     {% endfor %}
-  </span>
+  </span> #}
 
 </div>

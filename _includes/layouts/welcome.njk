@@ -13,9 +13,9 @@
   <body>
     <div class="wrapper">
       <section>
-        {% include header.html %}
+        {% include "header.njk" %}
 
-        {{ content }}
+        {{ content | safe }}
       </section>
     </div>
   </body>

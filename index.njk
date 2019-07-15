@@ -1,10 +1,13 @@
 ---
-layout: "layouts/welcome.njk"
-welcome_img: "https://cdn.dribbble.com/users/4753/screenshots/1584825/geo_geek.png"
+layout: layouts/welcome
+img_url: https://cdn.dribbble.com/users/4753/screenshots/1584825/geo_geek.png
+tags:
+  - nav
+navtitle: Home
 ---
-
 <div class="text-center">
-  <img class="circular" src="{{page.welcome_img}}" >
-  <p>contact me <a href="mailto:{{site.email.address}}">{{site.email.text}}</a>
+  <img class="circular" src="{{ img_url }}">
+  <p>contact me 
+    <a href="{{config.email}}">{{config.emailtext}}</a>
   </p>
-</div>
+  <div>
