@@ -1,30 +1,23 @@
 ---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+    - tagList
+  addAllPagesToCollections: true
 layout: layouts/default.njk
-permalink: "/tags/index.html"
+renderData:
+  title: Tagged “{{ tag }}”
+permalink: /tags/{{ tag }}/
 ---
-{#
-<ul class="tags">
-  <a class="text-muted">Tag cloud:</a>
-  {% for tag in site.tags %}
-    <a href="#{{ tag | first | slugize }}">
-      {{ tag | first }}
-    </a>
-  {% endfor %}
-</ul> #}
+<h1>Tagged “{{ tag }}”</h1>
 
-<div id="blog-archives">
-  {% for tag in site.tags %}
-    {% capture tag_name %}{{ tag | first }}
-    {% endcapture %}
-    <h3 class="tag_name" id="#{{ tag_name | slugize }}">{{ tag_name }}</h3>
-    <a name="{{ tag_name | slugize }}"></a>
+{% set postslist = collections[tag] %}
+{% include "postslist.njk" %}
 
-    {% for post in site.tags[tag_name] %}
-      <article>
-        <a href="{{ post.url | prepend:site.baseurl }}">{{post.title}}</a>
-        <small class="text-muted">
-          {{ post.date | date_to_string }}</small>
-      </article>
-    {% endfor %}
-  {% endfor %}
-</div>
+<p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
