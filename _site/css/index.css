@@ -213,15 +213,6 @@ mark,
   float: left !important;
 }
 
-.circular {
-  width: 300px;
-  height: 300px;
-  border-radius: 150px;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
-  margin-bottom: 15px;
-}
-
 section img {
   max-width: 100%;
 }
