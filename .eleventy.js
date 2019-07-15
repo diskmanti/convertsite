@@ -3,6 +3,8 @@ const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const localImages = require("eleventy-plugin-local-images");
+const CleanCSS = require("clean-css");
+const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -11,13 +13,33 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
+  // Data formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLL yyyy");
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  // Data formatting (machine redable)
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
+  });
+
+  // Minify css
+  eleventyConfig.addFilter("cssmin", function (code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
+
+  // Minify HTML output
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+    if (outputPath.indexOf(".html") > -1) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+    return content;
   });
 
   // Get the first `n` elements of a collection.
@@ -31,6 +53,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
 
+  // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("favicon.ico")
@@ -53,6 +76,7 @@ module.exports = function (eleventyConfig) {
     .use(markdownItAnchor, opts)
   );
 
+  // 404 browsersync redirect
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function (err, browserSync) {

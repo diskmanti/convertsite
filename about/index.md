@@ -1,9 +1,9 @@
 ---
-layout: layouts/welcome
-title: About me
+layout: layouts/default.njk
+title: About Me
 tags:
   - nav
 navtitle: About
 ---
 
-this is my about page
+I am a person that writes stuff.

@@ -1,5 +1,5 @@
 ---
-layout: layouts/welcome
+layout: layouts/welcome.njk
 img_url: https://cdn.dribbble.com/users/4753/screenshots/1584825/geo_geek.png
 tags:
   - nav
@@ -7,14 +7,15 @@ navtitle: Home
 ---
 <div class="text-center">
   <img class="circular" src="{{ img_url }}">
-  <p>contact me 
+  <p>contact me
     <a href="{{config.email}}">{{config.emailtext}}</a>
   </p>
-  <h1>Latest 3 Posts</h1>
+
+  {# <h1>Latest 3 Posts</h1>
 
   {% set postslist = collections.posts | head(-3) %}
   {% include "postslist.njk" %}
 
-  <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+  <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p> #}
 
   <div>
