@@ -25,22 +25,22 @@ module.exports = function (eleventyConfig) {
   });
 
   // Minify css
-  // eleventyConfig.addFilter("cssmin", function (code) {
-  //   return new CleanCSS({}).minify(code).styles;
-  // });
+  eleventyConfig.addFilter("cssmin", function (code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
   // Minify HTML output
-  // eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-  //   if (outputPath.indexOf(".html") > -1) {
-  //     let minified = htmlmin.minify(content, {
-  //       useShortDoctype: true,
-  //       removeComments: true,
-  //       collapseWhitespace: true
-  //     });
-  //     return minified;
-  //   }
-  //   return content;
-  // });
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+    if (outputPath.indexOf(".html") > -1) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+    return content;
+  });
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
@@ -61,20 +61,21 @@ module.exports = function (eleventyConfig) {
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
+  let markdownItEmoji = require("markdown-it-emoji");
   let options = {
     html: true,
     breaks: true,
-    linkify: true
+    linkify: true,
+    typographer: true
   };
   let opts = {
     permalink: true,
     permalinkClass: "direct-link",
     permalinkSymbol: "#"
   };
+  let markdownLib = markdownIt(options).use(markdownItEmoji);
 
-  eleventyConfig.setLibrary("md", markdownIt(options)
-    .use(markdownItAnchor, opts)
-  );
+  eleventyConfig.setLibrary("md", markdownLib);
 
   // 404 browsersync redirect
   // eleventyConfig.setBrowserSyncConfig({
