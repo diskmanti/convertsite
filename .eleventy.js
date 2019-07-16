@@ -7,6 +7,7 @@ const CleanCSS = require("clean-css");
 const htmlmin = require("html-minifier");
 const moment = require('moment');
 
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -75,6 +76,7 @@ module.exports = function (eleventyConfig) {
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
   let markdownItEmoji = require("markdown-it-emoji");
+  let prism = require("markdown-it-prism");
   let options = {
     html: true,
     breaks: true,
@@ -86,24 +88,24 @@ module.exports = function (eleventyConfig) {
     permalinkClass: "direct-link",
     permalinkSymbol: "#"
   };
-  let markdownLib = markdownIt(options).use(markdownItEmoji);
+  let markdownLib = markdownIt(options).use(markdownItEmoji).use(prism);
 
   eleventyConfig.setLibrary("md", markdownLib);
 
   // 404 browsersync redirect
-  // eleventyConfig.setBrowserSyncConfig({
-  //   callbacks: {
-  //     ready: function (err, browserSync) {
-  //       const content_404 = fs.readFileSync('_site/404.html');
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function (err, browserSync) {
+        const content_404 = fs.readFileSync('_site/404.html');
 
-  //       browserSync.addMiddleware("*", (req, res) => {
-  //         // Provides the 404 content without redirect.
-  //         res.write(content_404);
-  //         res.end();
-  //       });
-  //     }
-  //   }
-  // });
+        browserSync.addMiddleware("*", (req, res) => {
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          res.end();
+        });
+      }
+    }
+  });
 
   // localimage plugin configs https://github.com/robb0wen/eleventy-plugin-local-images
   eleventyConfig.addPlugin(localImages, {
