@@ -1,11 +1,11 @@
 {
   "email": "diskmanti@yahoo.co.uk",
-  "emailtext": "diskmanti (at) yahoo (dot) co (dot) uk",
-  "baseurl": "kot.kot",
-  "title": "GIS",
+  "emailtext": "diskmanti (at)yahoo(dot)co(dot)uk",
+  "baseurl": "harta.xyz",
+  "title": "HARTA.xyz",
   "url": "harta.xyz",
-  "subtitle": "harta dhe gis",
-  "header": "headetext",
+  "subtitle": "Tech and GIS",
+  "header": "GIS, Tech and everything in between",
   "feed": {
     "subtitle": "I am writing about my experiences as a naval navel-gazer.",
     "filename": "feed.xml",
