@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add html-minifier -
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add moment.js -D
 
 PATH: 
   /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files (x86)/Intel/iCLS Client:/mnt/c/Program Files/Intel/iCLS Client:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files (x86)/HP/HP Performance Advisor:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/nodejs:/mnt/c/Program Files (x86)/Yarn/bin:/mnt/c/HashiCorp/Vagrant/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/amanti.lulo/scoop/shims:/mnt/c/Users/amanti.lulo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/amanti.lulo/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/amanti.lulo/AppData/Roaming/npm:/mnt/c/Users/amanti.lulo/AppData/Local/Yarn/bin:/mnt/c/Users/amanti.lulo/AppData/Local/Microsoft/WindowsApps:/snap/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/-: Not found
+  Error: https://registry.yarnpkg.com/moment.js: Not found
       at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66091:18)
       at Request.self.callback (/usr/share/yarn/lib/cli.js:129590:22)
       at Request.emit (events.js:198:13)
@@ -33,8 +33,10 @@ npm manifest:
     "main": "index.js",
     "license": "MIT",
     "scripts": {
+      "build": "npx eleventy",
+      "watch": "npx eleventy --watch",
       "start": "npx eleventy --serve",
-      "debug": "DEBUG=Eleventy* npx eleventy"
+      "debug": "DEBUG=* npx eleventy"
     },
     "devDependencies": {
       "@11ty/eleventy": "^0.8.3",
@@ -42,9 +44,11 @@ npm manifest:
       "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
       "clean-css": "^4.2.1",
       "eleventy-plugin-local-images": "^0.1.0",
+      "html-minifier": "^4.0.0",
       "luxon": "^1.17.1",
       "markdown-it": "^9.0.0",
-      "markdown-it-anchor": "^5.2.4"
+      "markdown-it-anchor": "^5.2.4",
+      "markdown-it-emoji": "^1.4.0"
     },
     "dependencies": {}
   }
@@ -701,6 +705,14 @@ Lockfile:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/callsite/-/callsite-1.0.0.tgz#280398e5d664bd74038b6f0905153e6e8af1bc20"
     integrity sha1-KAOY5dZkvXQDi28JBRU+borxvCA=
+  
+  camel-case@^3.0.0:
+    version "3.0.0"
+    resolved "https://registry.yarnpkg.com/camel-case/-/camel-case-3.0.0.tgz#ca3c3688a4e9cf3a4cda777dc4dcbc713249cf73"
+    integrity sha1-yjw2iKTpzzpM2nd9xNy8cTJJz3M=
+    dependencies:
+      no-case "^2.2.0"
+      upper-case "^1.1.1"
   
   camelcase@^1.0.2:
     version "1.2.1"
@@ -2140,6 +2152,11 @@ Lockfile:
     dependencies:
       function-bind "^1.1.1"
   
+  he@^1.2.0:
+    version "1.2.0"
+    resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
+    integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
+  
   hosted-git-info@^2.1.4:
     version "2.7.1"
     resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
@@ -2151,6 +2168,19 @@ Lockfile:
     integrity sha512-71lZziiDnsuabfdYiUeWdCVyKuqwWi23L8YeIgV9jSSZHCtb6wB1BKWooH7L3tn4/FuZJMVWyNaIDr4RGmaSYw==
     dependencies:
       whatwg-encoding "^1.0.1"
+  
+  html-minifier@^4.0.0:
+    version "4.0.0"
+    resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-4.0.0.tgz#cca9aad8bce1175e02e17a8c33e46d8988889f56"
+    integrity sha512-aoGxanpFPLg7MkIl/DDFYtb0iWz7jMFGqFhvEDZga6/4QTjneiD8I/NXL1x5aaoCp7FSIT6h/OhykDdPsbtMig==
+    dependencies:
+      camel-case "^3.0.0"
+      clean-css "^4.2.1"
+      commander "^2.19.0"
+      he "^1.2.0"
+      param-case "^2.1.1"
+      relateurl "^0.2.7"
+      uglify-js "^3.5.1"
   
   htmlparser2@^3.9.2:
     version "3.10.1"
@@ -2827,6 +2857,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
     integrity sha1-MKCy2jj3N3DoKUoNIuZiXtd9AJc=
   
+  lower-case@^1.1.1:
+    version "1.1.4"
+    resolved "https://registry.yarnpkg.com/lower-case/-/lower-case-1.1.4.tgz#9a2cabd1b9e8e0ae993a4bf7d5875c39c42e8eac"
+    integrity sha1-miyr0bno4K6ZOkv31YdcOcQujqw=
+  
   lowercase-keys@1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-1.0.0.tgz#4e3366b39e7f5457e35f1324bdf6f88d0bfc7306"
@@ -2881,6 +2916,11 @@ Lockfile:
     version "5.2.4"
     resolved "https://registry.yarnpkg.com/markdown-it-anchor/-/markdown-it-anchor-5.2.4.tgz#d39306fe4c199705b4479d3036842cf34dcba24f"
     integrity sha512-n8zCGjxA3T+Mx1pG8HEgbJbkB8JFUuRkeTZQuIM8iPY6oQ8sWOPRZJDFC9a/pNg2QkHEjjGkhBEl/RSyzaDZ3A==
+  
+  markdown-it-emoji@^1.4.0:
+    version "1.4.0"
+    resolved "https://registry.yarnpkg.com/markdown-it-emoji/-/markdown-it-emoji-1.4.0.tgz#9bee0e9a990a963ba96df6980c4fddb05dfb4dcc"
+    integrity sha1-m+4OmpkKljupbfaYDE/dsF37Tcw=
   
   markdown-it@^8.4.2:
     version "8.4.2"
@@ -3125,6 +3165,13 @@ Lockfile:
     version "2.6.1"
     resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
     integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
+  
+  no-case@^2.2.0:
+    version "2.3.2"
+    resolved "https://registry.yarnpkg.com/no-case/-/no-case-2.3.2.tgz#60b813396be39b3f1288a4c1ed5d1e7d28b464ac"
+    integrity sha512-rmTZ9kz+f3rCvK2TD1Ue/oZlns7OGoIWP4fc3llxxRXlOkHKoWPPWJOfFYpITabSow43QJbRIoHQXtt10VldyQ==
+    dependencies:
+      lower-case "^1.1.1"
   
   node-pre-gyp@^0.12.0:
     version "0.12.0"
@@ -3382,6 +3429,13 @@ Lockfile:
     integrity sha512-88em58dDVB/KzPEx1X0N3LwFfYZPyDc4B6eF38M1rk9VTZMbxXXgjugz8mmwpS9Ox4BDZ+t6t3QP5+/gazweIA==
     dependencies:
       p-finally "^1.0.0"
+  
+  param-case@^2.1.1:
+    version "2.1.1"
+    resolved "https://registry.yarnpkg.com/param-case/-/param-case-2.1.1.tgz#df94fd8cf6531ecf75e6bef9a0858fbc72be2247"
+    integrity sha1-35T9jPZTHs915r75oIWPvHK+Ikc=
+    dependencies:
+      no-case "^2.2.0"
   
   parse-filepath@^1.0.2:
     version "1.0.2"
@@ -3923,6 +3977,11 @@ Lockfile:
     dependencies:
       extend-shallow "^3.0.2"
       safe-regex "^1.1.0"
+  
+  relateurl@^0.2.7:
+    version "0.2.7"
+    resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
+    integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
   
   remove-trailing-separator@^1.0.1:
     version "1.1.0"
@@ -4839,7 +4898,7 @@ Lockfile:
     optionalDependencies:
       uglify-to-browserify "~1.0.0"
   
-  uglify-js@^3.1.4:
+  uglify-js@^3.1.4, uglify-js@^3.5.1:
     version "3.6.0"
     resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.6.0.tgz#704681345c53a8b2079fb6cec294b05ead242ff5"
     integrity sha512-W+jrUHJr3DXKhrsS7NUVxn3zqMOFn0hL/Ei6v0anCIMoKC93TjcflTagwIHLW7SfMFfiQuktQyFVCFHGUE0+yg==
@@ -4907,6 +4966,11 @@ Lockfile:
     version "1.1.2"
     resolved "https://registry.yarnpkg.com/upath/-/upath-1.1.2.tgz#3db658600edaeeccbe6db5e684d67ee8c2acd068"
     integrity sha512-kXpym8nmDmlCBr7nKdIx8P2jNBa+pBpIUFRnKJ4dr8htyYGJFokkr2ZvERRtUN+9SY+JqXouNgUPtv6JQva/2Q==
+  
+  upper-case@^1.1.1:
+    version "1.1.3"
+    resolved "https://registry.yarnpkg.com/upper-case/-/upper-case-1.1.3.tgz#f6b4501c2ec4cdd26ba78be7222961de77621598"
+    integrity sha1-9rRQHC7EzdJrp4vnIilh3ndiFZg=
   
   uri-js@^4.2.2:
     version "4.2.2"

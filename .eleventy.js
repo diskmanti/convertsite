@@ -5,6 +5,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const localImages = require("eleventy-plugin-local-images");
 const CleanCSS = require("clean-css");
 const htmlmin = require("html-minifier");
+const moment = require('moment');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -22,6 +23,11 @@ module.exports = function (eleventyConfig) {
   // Data formatting (machine redable)
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
+  });
+
+  // date filter
+  eleventyConfig.addNunjucksFilter("date", function (date, format) {
+    return moment(date).format(format);
   });
 
   // Minify css
@@ -132,4 +138,6 @@ module.exports = function (eleventyConfig) {
       output: "_site"
     }
   };
+
+  buildTime: new Date()
 };
