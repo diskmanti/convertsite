@@ -11,4 +11,6 @@ I am a person that writes stuff. I enjoy to talk about GIS tech and these last m
 I will write more here when I find something intresting :)
 
 
-[{{ '/' | url }}](<- Home)
+<p>
+  <a href="{{ '/' | url }}">← Home</a>
+</p>
