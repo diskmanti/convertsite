@@ -4,7 +4,7 @@ title: About Me
 tags:
   - nav
 navtitle: About
-templateClass: tmpl-post
+navorder: 3
 ---
 
 I am a person that writes stuff. I enjoy to talk about GIS tech and these last months I have been working on DEVOPS stuff.

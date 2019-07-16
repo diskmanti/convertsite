@@ -42,6 +42,13 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  // set order for nav items https://github.com/kkga/home/blob/master/.eleventy.js
+  eleventyConfig.addCollection("nav", function (collection) {
+    return collection.getFilteredByTag("nav").sort(function (a, b) {
+      return a.data.navorder - b.data.navorder;
+    })
+  })
+
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
     if (n < 0) {
