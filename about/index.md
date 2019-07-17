@@ -11,6 +11,3 @@ I am a person that writes stuff. I enjoy to talk about GIS tech and these last m
 I will write more here when I find something intresting :)
 
 
-<p>
-  <a href="{{ '/' | url }}">← Home</a>
-</p>
