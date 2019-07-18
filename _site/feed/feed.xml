@@ -4,7 +4,7 @@
   <subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
   <link href="https://harta.xyz/feed/feed.xml" rel="self"/>
   <link href="harta.xyz"/>
-  <updated>2018-08-24T01:00:00+01:00</updated>
+  <updated>2018-08-24T02:00:00+02:00</updated>
   <id>https://harta.xyz/</id>
   <author>
     <name>diskmanti</name>
@@ -14,7 +14,7 @@
     <entry>
       <title>This is my first post.</title>
       <link href="/2018/05/01/this-is-my-first-post./"/>
-      <updated>2018-05-01T01:00:00+01:00</updated>
+      <updated>2018-05-01T02:00:00+02:00</updated>
       <id>/2018/05/01/this-is-my-first-post./</id>
       <content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
 &lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
@@ -27,7 +27,7 @@
     <entry>
       <title>This is my second post.</title>
       <link href="/2018/07/04/this-is-my-second-post./"/>
-      <updated>2018-07-04T01:00:00+01:00</updated>
+      <updated>2018-07-04T02:00:00+02:00</updated>
       <id>/2018/07/04/this-is-my-second-post./</id>
       <content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
 &lt;h2&gt;Section Header&lt;/h2&gt;
@@ -41,7 +41,7 @@
     <entry>
       <title>This is my third post.</title>
       <link href="/2018/08/24/this-is-my-third-post./"/>
-      <updated>2018-08-24T01:00:00+01:00</updated>
+      <updated>2018-08-24T02:00:00+02:00</updated>
       <id>/2018/08/24/this-is-my-third-post./</id>
       <content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
 &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// this is a command&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; a&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
