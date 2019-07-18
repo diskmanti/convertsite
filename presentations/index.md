@@ -4,8 +4,9 @@ tags:
   - nav
 navtitle: Presentations
 navorder: 5
+logo: "http://vectips.com/wp-content/uploads/2016/08/Land-icon08.jpg"
 ---
-This is where you can find my [Presentations](https://presentations.harta.xyz)
+This is where you can find all my presentations.
 
 ### 2019 
 
