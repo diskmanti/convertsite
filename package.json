@@ -7,7 +7,8 @@
     "build": "rimraf _site && npx eleventy",
     "watch": "npx eleventy --watch",
     "start": "rimraf _site && npx eleventy --serve",
-    "debug": "DEBUG=* npx eleventy"
+    "debug": "DEBUG=* npx eleventy",
+    "sass:process": "sass scss/global.scss  _includes/css/global.css --style=compressed"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
