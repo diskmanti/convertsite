@@ -4,7 +4,7 @@
   <subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
   <link href="https://harta.xyz/feed/feed.xml" rel="self"/>
   <link href="harta.xyz"/>
-  <updated>2018-08-24T02:00:00+02:00</updated>
+  <updated>2019-02-14T00:00:00+01:00</updated>
   <id>https://harta.xyz/</id>
   <author>
     <name>diskmanti</name>
@@ -12,42 +12,108 @@
   </author>
     
     <entry>
-      <title>This is my first post.</title>
-      <link href="/2018/05/01/this-is-my-first-post./"/>
-      <updated>2018-05-01T02:00:00+02:00</updated>
-      <id>/2018/05/01/this-is-my-first-post./</id>
-      <content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
-&lt;h2&gt;Section Header&lt;/h2&gt;
-&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
-&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;span class=&quot;highlight-line&quot;&gt;// this is a command&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;function myCommand() {&lt;/span&gt;&lt;br&gt;&lt;mark class=&quot;highlight-line highlight-line-active&quot;&gt;	let counter = 0;&lt;/mark&gt;&lt;br&gt;&lt;mark class=&quot;highlight-line highlight-line-active&quot;&gt;	counter++;&lt;/mark&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;// Test with a line break above this line.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;console.log(&#39;Test&#39;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      <title>Leaflet.js</title>
+      <link href="/2016/05/11/leaflet.js/"/>
+      <updated>2016-05-11T00:00:00+02:00</updated>
+      <id>/2016/05/11/leaflet.js/</id>
+      <content type="html">&lt;p&gt;&lt;img src=&quot;/img/leaflet-logo.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Një nga veglat me të mira që kam hasur gjatë eksperiencës time ka qenë &lt;a href=&quot;www.leaflet.com&quot;&gt;leaflet&lt;/a&gt;.&lt;br&gt;
+Leaflet është libraria më e përdorur gjatë zhvillimit të një aplikimi në &lt;em&gt;Web GIS&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Është falas dhe gjithkush mund ta përdori për qëllimet e tij. Leaflet ka një dokumentimi shumë të mirë dhe plotëson të gjitha nevojat bazë që mund të keni në një aplikim GIS.&lt;/p&gt;
+&lt;p&gt;Gjithashtu leaflet ka një numër të madh &lt;a href=&quot;http://leafletjs.com/plugins.html&quot;&gt;plugins&lt;/a&gt;, të cilat e zgjerojnë funksionalitetin e leaflet edhe më tej.&lt;/p&gt;
+&lt;p&gt;Nqs doni të mësoni diçka më shumë rreth leaflet, tek &lt;a href=&quot;http://leafletjs.com/examples.html&quot;&gt;link&lt;/a&gt; keni disa shembuj të përdorimit të thjeshtë të leaflet.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;diskmanti&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
     </entry>
     
     <entry>
-      <title>This is my second post.</title>
-      <link href="/2018/07/04/this-is-my-second-post./"/>
-      <updated>2018-07-04T02:00:00+02:00</updated>
-      <id>/2018/07/04/this-is-my-second-post./</id>
-      <content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;h2&gt;Section Header&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;/posts/firstpost/&quot;&gt;First post&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;/posts/thirdpost/&quot;&gt;Third post&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
-&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
+      <title>SQLServer</title>
+      <link href="/2016/05/18/sqlserver/"/>
+      <updated>2016-05-18T00:00:00+02:00</updated>
+      <id>/2016/05/18/sqlserver/</id>
+      <content type="html">&lt;p&gt;&lt;img src=&quot;/img/sqlserver.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Kur po punoja në një zyrë më rastisi që duhet të përdorja ++SQLServer++, nga Microsft, sepse i gjithë informacioni qe ata kishin ishte në SQLServer. Zakonisht unë përdor Postgresql me PostGIS extension(jua këshilloj dhe juve 😃 ) për të ruajtur dhe menaxhuar të dhënat e mia hapësinore, por në këtë rast isha i detyruar të përdorja SQLServer.&lt;/p&gt;
+&lt;p&gt;Ajo që mua mu duk mangësi kryesore e SQLServer ishte mungesa e një mënyre për të hedhur të dhëna hapësinore në server. Kjo mu duk shume e çuditshme sepse SQLServer suportonte spatial data që nga versioni i vitit 2008 dhe kishte përdorues(edhe pse shume pak) që e përdornin.&lt;br&gt;
+Mbas disa kërkimesh arrita të gjej 2 mjete që arrinin të bënin çfarë unë kërkoja: &lt;a href=&quot;http://www.sharpgis.net/page/Shape2SQL&quot;&gt;Shape2SQL&lt;/a&gt;, &lt;a href=&quot;http://www.dknezevic.com/blog/2014/10/import-shapefiles-into-sql-server.html&quot;&gt;SHP Importer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Të dy këto mjete nuk janë zyrtare nga Microsoft, por të krijuar nga &lt;strong&gt;devs&lt;/strong&gt; për të përmbushur nevojat e tyre, dhe për ketë arsye kane disa mangësi. Mangësia e parë është që duhet të dish character encoding që kane tabelat e tua ne shapefile. Kjo nuk është gjithmonë diçka që mund të dihet, apo të gjendet kollaj. Mangësia e dytë është fakti që këto mjete krijojnë një kolonë të re në data bazë ku ruajnë një ID të krijuar prej tyre, sepse nuk janë në gjendje të njohin ID që mund të ketë vetë shapefile.&lt;/p&gt;
+&lt;p&gt;Si përfundim, këto mjete edhe pse kane mangësitë e tyre gjejnë vend për përdorim sepse ofrojnë diçka që i mungon SQLServer dhe të lejojnë të arrish qëllimin tënd. Gjithashtu është e vetmja mënyre që unë gjeta si alternative ndaj OGR. 😉&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;diskmanti&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
     </entry>
     
     <entry>
-      <title>This is my third post.</title>
-      <link href="/2018/08/24/this-is-my-third-post./"/>
-      <updated>2018-08-24T02:00:00+02:00</updated>
-      <id>/2018/08/24/this-is-my-third-post./</id>
-      <content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// this is a command&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; a&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
-&lt;h2&gt;Section Header&lt;/h2&gt;
-&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
+      <title>QuickMapServces Plugin</title>
+      <link href="/2016/05/31/quickmapservces-plugin/"/>
+      <updated>2016-05-31T00:00:00+02:00</updated>
+      <id>/2016/05/31/quickmapservces-plugin/</id>
+      <content type="html">&lt;p&gt;&lt;img src=&quot;/img/qms-example.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Një nga plugin më të mirë që mund të ketë QGIS është &lt;a href=&quot;https://plugins.qgis.org/plugins/quick_map_services/&quot;&gt;&lt;strong&gt;QuickMapServices&lt;/strong&gt;&lt;/a&gt;. Ky është një plugin i cili lejon përdorueset e QGIS të shtojnë &lt;em&gt;baselayer&lt;/em&gt; të ndryshëm në hartat e tyre. Në fakt ky plugin kryen të njëjtin funksion si një plugin tjetër, shumë i njohur i QGIS, &lt;a href=&quot;https://plugins.qgis.org/plugins/openlayers_plugin/&quot;&gt;&lt;strong&gt;OpenLayers&lt;/strong&gt;&lt;/a&gt; plugin.&lt;/p&gt;
+&lt;p&gt;OpenLayers plugin, për shumë kohe, ka qenë i vetmi plugin që kryente një funksion të tillë. Dhe e bënte shumë mirë. Përveç thjesht shtimit të baselayer të ndryshëm në QGIS, ai lejonte edhe download të të dhënave nga OSM, në format XML, dhe përdormini e tyre në QGIS, pa përdorur asnjë software shtesë dhe direkt nga GUI i QGIS. Por OpenLayers plugin kishte disa mangësi kyçe:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Në mënyre që baselayer, sidomos kur doje të përdorje një nga layer e Google, të puthiteshe sa më mire me të dhënat e tua duhet të përdorje &lt;em&gt;EPSG:3857&lt;/em&gt;. Në rast të kundërtat do të viheshin re gabime apo QGIS edhe mund të shkonte në &lt;em&gt;crash&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OpenLayers plugin kishte një listë të limituar me servise nga mund të shtoje baselayer dhe ajo listë nuk ishte e ndryshueshme nga përdoruesi. Kjo vinte për shkak sepse mbrapa këtij plugin qëndronte &lt;em&gt;OpenLayers.js&lt;/em&gt; dhe lista me baselayer ishte built-in bashke me plugin.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;QuickMapServices nuk i ka këto problematika. Çdo baselayer i shtuar me anë te këtij plugin mund të riprojektohet &lt;em&gt;on-the-fly&lt;/em&gt; në çdo sistem koordinativ pa asnjë problem. Dhe gjithashtu mund të shtohen servise të ndryshme, nga burime të shumëllojshme(Server lokal ose jo).&lt;br&gt;
+QuickMapServices mund të instalohet direkte nga plugin repository zyrtar i QGIS dhe ai vjen i konfiguruar me disa servise. Në mënyre që ju të shtoni serviset më interesante(si Google, Stamen apo CartoDB) mjafton të ndiqni këto &lt;a href=&quot;http://nextgis.com/blog/quickmapservices-with-contributed-services/&quot;&gt;hapa&lt;/a&gt;. Nqs doni të shtoni serviset tuaja mund të ndiqni këtë &lt;a href=&quot;https://github.com/nextgis/quickmapservices/wiki/Adding-data-source&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Servise default&lt;/th&gt;
+&lt;th&gt;Servise interesante&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img src=&quot;/img/qms.png&quot; alt=&quot;default&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&quot;/img/qms-contrib.png&quot; alt=&quot;me servise shtesë&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;QuickMapServices, në çdo aspekt të funksionalitet të tij, është superior ndaj OpenLayers plugin. Ai bën gjithçka ku OpenLayers plugin ngel mbrapa dhe vazhdon të jetë mbrapa. E vetmja gjë që OpenLayers ka më shumë se QuickMapServies është mundësia për të download të dhëna në mënyrë direkte nga OSM. Por QuickMapServices ka për qëllim vetëm menaxhimin e baselayers dhe këtë e bën shumë mirë. 👍 😄&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;diskmanti&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    </entry>
+    
+    <entry>
+      <title>Kohet e fundit</title>
+      <link href="/2019/02/07/kohet-e-fundit/"/>
+      <updated>2019-02-07T00:00:00+01:00</updated>
+      <id>/2019/02/07/kohet-e-fundit/</id>
+      <content type="html">&lt;p&gt;&lt;img src=&quot;/img/geo_geek.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Pershendetje,&lt;/p&gt;
+&lt;p&gt;Eshte bere shume kohe qe nuk kam shkruar asjge ne kete blog. Besoj se shume pak persona e kane lexuar ato 2-3 poste qe kam publikuar.&lt;/p&gt;
+&lt;p&gt;Qe ti bie shkurt kam vendosur te rinis te shkruaj me shpesh ne kete blog dhe ky post eshte nje intro e vogel. Nuk e di akoma per cfare do te jete tematika e rradhes por ka disa ide ne mendje.&lt;/p&gt;
+&lt;p&gt;Deri heres tjeter …&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;diskmanti&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    </entry>
+    
+    <entry>
+      <title>OSCAL 19</title>
+      <link href="/2019/02/14/oscal-19/"/>
+      <updated>2019-02-14T00:00:00+01:00</updated>
+      <id>/2019/02/14/oscal-19/</id>
+      <content type="html">&lt;p&gt;Pershendetje,&lt;/p&gt;
+&lt;p&gt;Si e kam thene dhe tek post i meparshem do te filloj te jem me aktiv ne blog dhe te shkruaj me shume.&lt;/p&gt;
+&lt;p&gt;Ne kete rast dua te bej te ditur qe kam vnedosur te marr pjese tek&lt;br&gt;
+&lt;a href=&quot;https://oscal.openlabs.cc/&quot;&gt;OSCAL 19&lt;/a&gt;. OSCAL{&lt;em&gt;O&lt;/em&gt;pen &lt;em&gt;S&lt;/em&gt;ource &lt;em&gt;C&lt;/em&gt;onference &lt;em&gt;AL&lt;/em&gt;bania} eshte nej konference vjetore e organizuar nga &lt;a href=&quot;https://openlabs.cc/en/&quot;&gt;OpenLabs&lt;/a&gt; e cila ka per qellim promovimin e teknologjise me kodburim te hapur. Vjet pata mundesine te isha aty dhe zhvillova nje workshop per &lt;a href=&quot;leafletjs.com&quot;&gt;leafletJS&lt;/a&gt;, cili pati sukses. 😃&lt;/p&gt;
+&lt;p&gt;Duke qene se me pelqeu eksperienca e vitit te kaluar kam vendosur te aplikoj edhe kete vit per te zhvilluar nje workshop rreth hartografise duke perdorur Blender3D. 😆&lt;/p&gt;
+&lt;p&gt;Ne vazhdim do te publikoj ketu me shume detaje rreth kesaj teme.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;diskmanti&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
     </entry>
 </feed>

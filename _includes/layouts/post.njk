@@ -2,10 +2,24 @@
 layout: layouts/default.njk
 ---
 
+<p>
+  <a href="{{ '/' | url }}">← Home</a>
+</p>
+
 <h1>{{ title }}</h1>
 
 {{ content | safe }}
 
-<p>
-  <a href="{{ '/' | url }}">← Home</a>
-</p>
+{% if nextPost.url %}
+  <p class="ctr">
+    <strong>Next</strong>: 
+    <a class="next" href={{ nextPost.url }}>{{ nextPost.data.title }}</a>
+  </p>
+{% endif %}
+{% if prevPost.url %}
+  <p class="ctr">
+    <strong>Previous</strong>: 
+    <a class="previous" href={{ prevPost.url }}>{{ prevPost.data.title }}</a>
+  </p>
+{% endif %}
+
