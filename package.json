@@ -20,7 +20,7 @@
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.4",
     "markdown-it-emoji": "^1.4.0",
-    "markdown-it-prism": "^2.0.3",
+    "markdown-it-prism": "^2.1.6",
     "moment": "^2.24.0",
     "rimraf": "^3.0.0"
   },
