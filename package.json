@@ -18,7 +18,7 @@
     "html-minifier": "^4.0.0",
     "luxon": "^1.21.3",
     "markdown-it": "^10.0.0",
-    "markdown-it-anchor": "^5.2.4",
+    "markdown-it-anchor": "^7.1.0",
     "markdown-it-emoji": "^1.4.0",
     "markdown-it-prism": "^2.0.3",
     "moment": "^2.24.0",
